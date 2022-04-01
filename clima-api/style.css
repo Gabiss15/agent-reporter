@@ -4,6 +4,39 @@
     font-weight: normal;
 }
 
+@media only screen and (max-width: 400px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+        background-color: #f3fbff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7{
+        width: 50%;
+    }
+    figcaption > img{
+        width: 100px;
+        height: 100px;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        background-color: #110e3c;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +44,7 @@
 
 body{
     display: flex;
+
 }
 main{
     background-color:#f3fbff;
@@ -192,6 +226,7 @@ h4{
 .txt{
     font-size: 14px;
     display: flex;
+    flex-direction: column;
     padding-bottom: 20px;
 }
 
@@ -204,6 +239,7 @@ h4{
     "legenda-1 linha-1 linha-2 linha-3 linha-4 linha-5 linha-6 linha-7"
     "legenda-1 linha-1 linha-2 linha-3 linha-4 linha-5 linha-6 linha-7";
     padding-top: 1px;
+    align-items: flex-end;
 }
 
 .legenda-1{
@@ -224,7 +260,6 @@ h4{
     justify-self: flex-end;
     background-color: yellow;
     height: 150px;
-    margin-top: 30px;
 }
 
 .grafico{
