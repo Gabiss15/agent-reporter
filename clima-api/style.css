@@ -6,8 +6,11 @@
 
 @media only screen and (max-width: 400px){
     body{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "main"
+        "section";
     }
     main{
         width: 100%;
@@ -25,7 +28,7 @@
         height: 100px;
     }
     section{
-        width: 100%;
+        /*width: 70em;*/
         display: flex;
         background-color: #110e3c;
     }
@@ -252,12 +255,12 @@ h4{
     width: 20px;
     height: 180px;
     border-radius: 10px;
+    justify-content: flex-end;
     background-color: rgb(68, 68, 189);
 }
 
 #barra-4{
     display: flex;
-    justify-self: flex-end;
     background-color: yellow;
     height: 150px;
 }
