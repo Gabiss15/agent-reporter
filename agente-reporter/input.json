@@ -1,0 +1,20 @@
+{
+  "nome_sistema": "Controle de Temperatura",
+  "componentes": [
+    "Sensor LM35",
+    "Controlador PID",
+    "Resistência"
+  ],
+  "entradas": [
+    "Temperatura medida"
+  ],
+  "saidas": [
+    "Potência aplicada"
+  ],
+  "restricoes": [
+    "Temperatura máxima 60°C"
+  ],
+  "comportamentos": [
+    "Manter temperatura em 50°C"
+  ]
+}
